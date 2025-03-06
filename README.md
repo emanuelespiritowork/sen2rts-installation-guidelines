@@ -11,3 +11,5 @@ Possible sources of issues:
 1) be sure to have Rtools to install packages from sources. If you cannot remember, install from CRAN the following packages writing on R console the following *install.packages("pkgbuild")*, *install.packages("devtools")*. Then restart R and execute *library(devtools)*, *library(pkgbuild)*, *find_rtools()*. The echo value TRUE means that you have already installed Rtools. Rtools can be found in R-CRAN website according to your current version of R. Your R version can be found using the command *R.version* in the R console;
 2) some packages might have been compressed. Try to install the following packages used to (de)compress R packages. Write on the R console the following *install.packages("deflateBR")* and *install.packages("zlib")*
 3) other packages have gone deprecated related to R and json. Try to install the following packages writing on the R console *install.packages("XML")* *install.packages("geojsonio")* *install.packages("RcppTOML")*
+
+sen2rts is a package made by L. Ranghetti and you can find info at https://github.com/ranghetti/sen2rts
