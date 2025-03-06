@@ -12,4 +12,4 @@ Possible sources of issues:
 2) some packages might have been compressed. Try to install the following packages used to (de)compress R packages. Write on the R console the following *install.packages("deflateBR")* and *install.packages("zlib")*
 3) other packages have gone deprecated related to R and json. Try to install the following packages writing on the R console *install.packages("XML")* *install.packages("geojsonio")* *install.packages("RcppTOML")*
 
-sen2rts is a package made by L. Ranghetti and you can find info at https://github.com/ranghetti/sen2rts
+sen2rts is a package made by L. Ranghetti and you can find info at https://github.com/ranghetti/sen2rts. Full documentation is found at https://rdrr.io/github/ranghetti/sen2rts/
