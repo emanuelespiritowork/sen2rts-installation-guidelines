@@ -29,7 +29,7 @@ install.packages("YOUR/PATH", repos = NULL, type = "source")
 remotes::install_github("ranghetti/sen2rts")
 ```
 
-Possible sources of issues:
+# Possible sources of issues
 1) remember not to update any package while installing one of the previous ones. CRAN will always check if there are updates for dependent packages while you install a new one. Please select not to update packages. If you have already updated a package of interest, remove and then start the list above again. 
 2) be sure to have *Rtools* to install packages from sources. If you cannot remember, install from CRAN the following packages writing on R console the following:
 ```r
