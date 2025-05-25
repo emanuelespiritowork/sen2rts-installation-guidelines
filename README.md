@@ -57,6 +57,6 @@ install.packages("RcppTOML")
 ```
 4) check *sp* package version (it should be 2.1-4). It should be the one you get from:
 ```r
-remotes::install_version("rgeos", version = "0.6-4")
+remotes::install_version("sp", version = "2.1-4")
 ```
 sen2rts is a package made by L. Ranghetti and you can find info at https://github.com/ranghetti/sen2rts. Full documentation is found at https://rdrr.io/github/ranghetti/sen2rts/
