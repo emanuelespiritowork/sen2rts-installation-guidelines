@@ -5,26 +5,30 @@ Set of instruction to install the R package sen2rts and all its dependencies upd
 ```r
 install.packages("remotes")
 ```
-3) you will need to install *rgdal*. rgdal package is no more on live CRAN but you can go to CRAN archive and download the latest version (here https://cran.r-project.org/src/contrib/Archive/rgdal/rgdal_1.6-7.tar.gz). After downloading it, to install the *rgdal* package write in the R console: 
+3) check *sp* package version (it should be 2.1-4). It should be the one you get from:
+```r
+remotes::install_version("sp", version = "2.1-4")
+```
+4) you will need to install *rgdal*. rgdal package is no more on live CRAN but you can go to CRAN archive and download the latest version (here https://cran.r-project.org/src/contrib/Archive/rgdal/rgdal_1.6-7.tar.gz). After downloading it, to install the *rgdal* package write in the R console: 
 ```r
 install.packages("YOUR/PATH", repos = NULL, type = "source")
 #Equivalently you can install from r-forge using the following:
 url <- "https://download.r-forge.r-project.org/bin/windows/contrib/4.4/rgdal_1.6-7.zip"
 install.packages(url, type="source", repos=NULL)
 ```
-4) you will need to install *gdalUtils*. We are going to use the *remotes* package. Type on R console the command: 
+5) you will need to install *gdalUtils*. We are going to use the *remotes* package. Type on R console the command: 
 ```r
 remotes::install_github("gearslaboratory/gdalUtils")
 ```
-5) in the same way you will install *rgeos* by typing on the R console the command: 
+6) in the same way you will install *rgeos* by typing on the R console the command: 
 ```r
 remotes::install_version("rgeos", version = "0.6-4")
 ```
-6) you will need to install *sen2r*. As for *rgdal*, it is not on R CRAN live but you can find it in CRAN archive (here https://cran.r-project.org/src/contrib/Archive/sen2r/sen2r_1.6.0.tar.gz). After downloading it, write in the R console:
+7) you will need to install *sen2r*. As for *rgdal*, it is not on R CRAN live but you can find it in CRAN archive (here https://cran.r-project.org/src/contrib/Archive/sen2r/sen2r_1.6.0.tar.gz). After downloading it, write in the R console:
 ```r
 install.packages("YOUR/PATH", repos = NULL, type = "source")
 ```
-7) you will install *sen2rts* from GitHub using on the R console:
+8) you will install *sen2rts* from GitHub using on the R console:
 ```r
 remotes::install_github("ranghetti/sen2rts")
 ```
@@ -55,8 +59,5 @@ install.packages("XML")
 install.packages("geojsonio")
 install.packages("RcppTOML")
 ```
-4) check *sp* package version (it should be 2.1-4). It should be the one you get from:
-```r
-remotes::install_version("sp", version = "2.1-4")
-```
+
 sen2rts is a package made by L. Ranghetti and you can find info at https://github.com/ranghetti/sen2rts. Full documentation is found at https://rdrr.io/github/ranghetti/sen2rts/
