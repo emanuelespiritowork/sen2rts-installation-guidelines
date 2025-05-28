@@ -20,7 +20,7 @@ install.packages(url, type="source", repos=NULL)
 ```r
 remotes::install_github("gearslaboratory/gdalUtils")
 ```
-6) in the same way you will install *rgeos* by typing on the R console the command: 
+6) in the same way you will install *rgeos* (without updating *sp*) by typing on the R console the command: 
 ```r
 remotes::install_version("rgeos", version = "0.6-4")
 ```
