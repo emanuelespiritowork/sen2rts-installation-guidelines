@@ -24,11 +24,18 @@ remotes::install_github("gearslaboratory/gdalUtils")
 ```r
 remotes::install_version("rgeos", version = "0.6-4")
 ```
-7) you will need to install *sen2r*. As for *rgdal*, it is not on R CRAN live but you can find it in CRAN archive (here https://cran.r-project.org/src/contrib/Archive/sen2r/sen2r_1.6.0.tar.gz). After downloading it, write in the R console:
+7) other packages have gone deprecated related to R and json. Try to install the following packages writing on the R console:
+```r
+install.packages("XML")
+install.packages("geojsonio")
+install.packages("RcppTOML")
+install.packages(c('stars', 'data.table', 'doParallel', 'httr'))
+```
+8) you will need to install *sen2r*. As for *rgdal*, it is not on R CRAN live but you can find it in CRAN archive (here https://cran.r-project.org/src/contrib/Archive/sen2r/sen2r_1.6.0.tar.gz). After downloading it, write in the R console:
 ```r
 install.packages("YOUR/PATH", repos = NULL, type = "source")
 ```
-8) you will install *sen2rts* from GitHub using on the R console:
+9) you will install *sen2rts* from GitHub using on the R console:
 ```r
 remotes::install_github("ranghetti/sen2rts")
 ```
@@ -52,12 +59,6 @@ R.version
 ```r
 install.packages("deflateBR")
 install.packages("zlib")
-```
-3) other packages have gone deprecated related to R and json. Try to install the following packages writing on the R console:
-```r
-install.packages("XML")
-install.packages("geojsonio")
-install.packages("RcppTOML")
 ```
 
 sen2rts is a package made by L. Ranghetti and you can find info at https://github.com/ranghetti/sen2rts. Full documentation is found at https://rdrr.io/github/ranghetti/sen2rts/
