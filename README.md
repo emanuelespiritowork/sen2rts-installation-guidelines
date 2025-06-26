@@ -11,8 +11,6 @@ remotes::install_version("sp", version = "2.1-4")
 ```
 4) you will need to install *rgdal*. rgdal package is no more on live CRAN but you can go to CRAN archive and download the latest version (here https://cran.r-project.org/src/contrib/Archive/rgdal/rgdal_1.6-7.tar.gz). After downloading it, to install the *rgdal* package write in the R console: 
 ```r
-install.packages("YOUR/PATH", repos = NULL, type = "source")
-#Equivalently you can install from r-forge using the following:
 url <- "https://download.r-forge.r-project.org/bin/windows/contrib/4.4/rgdal_1.6-7.zip"
 install.packages(url, type="source", repos=NULL)
 ```
@@ -31,9 +29,10 @@ install.packages("geojsonio")
 install.packages("RcppTOML")
 install.packages(c('stars', 'data.table', 'doParallel', 'httr'))
 ```
-8) you will need to install *sen2r*. As for *rgdal*, it is not on R CRAN live but you can find it in CRAN archive (here https://cran.r-project.org/src/contrib/Archive/sen2r/sen2r_1.6.0.tar.gz). After downloading it, write in the R console:
+8) you will need to install *sen2r*. As for *rgdal*, it is not on R CRAN live but you can find it in CRAN archive. Write in the R console:
 ```r
-install.packages("YOUR/PATH", repos = NULL, type = "source")
+url <- "https://cran.r-project.org/src/contrib/Archive/sen2r/sen2r_1.6.0.tar.gz"
+install.packages(url, type="source", repos=NULL)
 ```
 9) you will install *sen2rts* from GitHub using on the R console:
 ```r
